@@ -12,12 +12,16 @@ void printChess()
 	"PPPPPPPP",
 	"RNBQKBNR"};
 	for (int i=0;i<chess_size;i++)
+	{
+		printf("\n");
 		for (int j=0; j<chess_size;j++)
-			printf("%c",Desk[i][j]);
+			printf("%c|",Desk[i][j]);
+	}
 }
 
 int main()
 {
     printChess();
+    printf("\n");
     return 0;
 }
